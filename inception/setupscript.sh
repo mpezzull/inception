@@ -5,22 +5,6 @@ YELLOW=`tput setaf 3`
 BLUE=`tput setaf 6`
 RESET=`tput sgr0`
 
-echo -e
-echo -e
-echo -e
-echo -e
-echo "██████╗  █████╗ ██████╗ ██╗    ███╗   ███╗███████╗██╗  ██╗██████╗ ██╗███████╗███████╗"
-echo "██╔══██╗██╔══██╗██╔══██╗██║    ████╗ ████║██╔════╝██║  ██║██╔══██╗██║╚════██║╚════██║"
-echo "██████╔╝███████║██████╔╝██║    ██╔████╔██║█████╗  ███████║██║  ██║██║   ██╔╝    ██╔╝"
-echo "██╔══██╗██╔══██║██╔══██╗██║    ██║╚██╔╝██║██╔══╝  ██╔══██║██║  ██║██║  ██╔╝    ██╔╝"
-echo "██████╔╝██║  ██║██║  ██║██║    ██║ ╚═╝ ██║███████╗██║  ██║██████╔╝██║  ██║     ██║"
-echo "╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝     ╚═╝"
-echo "${BLUE}══════════════════════════║Welcome to My script installer║═══════════════════════════${RESET}"
-echo -e
-echo -e
-echo -e
-echo -e
-
 read -p "${GREEN}Do you want to ${RED}Update Your System?${GREEN}:${YELLOW} [y/N]${RESET}" update
 read -p "${GREEN}Do you want to ${RED}Install git?${GREEN}:${YELLOW} [y/N]${RESET}" git
 read -p "${GREEN}Do you want to ${RED}Install zsh?${GREEN}:${YELLOW} [y/N]${RESET}" zsh
@@ -46,7 +30,7 @@ echo -e
 sleep 2
 
 
-if [ "$update" == "y" ]
+if [ "$update" = "y" ]
 then
   echo "${RED}Updating The System${RESET}"
   sudo apt-get update -y
