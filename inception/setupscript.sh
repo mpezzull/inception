@@ -17,15 +17,9 @@ read -p "${GREEN}Do you want to ${RED}Install Docker?${GREEN}:${YELLOW} [y/N]${R
 read -p "${GREEN}Do you want to Make docker run Without ${RED}sudo${GREEN}:${YELLOW} [y/N]${RESET}" dsudo
 read -p "${GREEN}Do you want to ${RED}Install Docker Compose?${GREEN}:${YELLOW} [y/N]${RESET}" dc
 
-echo -e
-echo -e
-echo -e
-echo -e
+echo "\n\n"
 echo "${RED}════════════║Thank You, Please wait....║════════════${RESET}"
-echo -e
-echo -e
-echo -e
-echo -e
+echo "\n\n"
 
 sleep 2
 
@@ -152,7 +146,7 @@ fi
 
 if [ "$dsudo" = 'y' ]
 then
-  echo -e "${RED}╔════════════════════════════║NOTE:║════════════════════════╗${RESET}"
-  echo -e "${RED}║   ${BLUE} Please Restart Your machine To apply Those changes!${RED}    ║${RESET}"
-  echo -e "${RED}╚═══════════════════════════════════════════════════════════╝${RESET}"
+  echo "${RED}╔════════════════════════════║NOTE:║════════════════════════╗${RESET}"
+  echo "${RED}║   ${BLUE} Please Restart Your machine To apply Those changes!${RED}    ║${RESET}"
+  echo "${RED}╚═══════════════════════════════════════════════════════════╝${RESET}"
 fi

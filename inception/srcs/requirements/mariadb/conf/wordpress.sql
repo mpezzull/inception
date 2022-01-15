@@ -1,5 +1,3 @@
--- Adminer 4.8.1 MySQL 5.5.5-10.4.22-MariaDB dump
-
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
@@ -114,7 +112,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30,	'hack_file',	'0',	'yes'),
 (31,	'blog_charset',	'UTF-8',	'yes'),
 (32,	'moderation_keys',	'',	'no'),
-(33,	'active_plugins',	'a:1:{i:0;s:27:\"redis-cache/redis-cache.php\";}',	'yes'),
+(33,	'active_plugins',	'',	'no'),
 (34,	'category_base',	'',	'yes'),
 (35,	'ping_sites',	'http://rpc.pingomatic.com/',	'yes'),
 (36,	'comment_max_links',	'2',	'yes'),

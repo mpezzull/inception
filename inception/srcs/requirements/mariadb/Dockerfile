@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM alpine:3.14.0
 
 # Update System and Install Tools
 RUN apk update

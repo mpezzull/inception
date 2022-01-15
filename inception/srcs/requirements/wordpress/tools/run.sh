@@ -7,8 +7,6 @@ sed -i 's|DATABASE_USER|'${DATABASE_USER}'|g' /wordpress/wp-config.php
 sed -i 's|DATABASE_PASS|'${DATABASE_PASS}'|g' /wordpress/wp-config.php
 sed -i 's|DATABASE_HOST|'${DATABASE_HOST}'|g' /wordpress/wp-config.php
 
-# Copy Folder of redis-cache to mounted volume
-cp -r redis-cache/ /wordpress/wp-content/plugins/
 # Copy Folder of WordPress to mounted volume
 cp -r /wordpress/* /var/www/html/wordpress/
 
