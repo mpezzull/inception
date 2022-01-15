@@ -25,15 +25,6 @@ build:
 up:
 	@echo "$(GREEN)██████████████████████ Running Containers ██████████████████████$(RESET)"
 	@docker-compose -f ./srcs/docker-compose.yml up -d
-	@echo "$(RED)╔════════════════════════════║NOTE:║════════════════════════╗$(RESET)"
-	@echo "$(RED)║   $(BLUE) You can see The Containers logs using $(YELLOW)make logs        $(RED)║$(RESET)"
-	@echo "$(RED)╚═══════════════════════════════════════════════════════════╝$(RESET)"
-
-
-logs:
-	@echo "$(GREEN)██████████████████████ Running Containers ██████████████████████$(RESET)"
-	docker-compose -f ./srcs/docker-compose.yml logs
-	
 
 status:
 	@echo "$(GREEN)██████████████████████ The Running Containers ██████████████████████$(RESET)"
@@ -48,8 +39,6 @@ down:
 	@echo "$(RED)██████████████████ Removing All Containers ██████████████████$(RESET)"
 	docker-compose -f ./srcs/docker-compose.yml down
 
-reload: down rvolumes build up
-
 rm: rvolumes down
 	@echo "$(RED)█████████████████████ Remove Everything ██████████████████████$(RESET)"
 	docker system prune -a
@@ -62,5 +51,4 @@ volumes:
 	@echo "$(GREEN)█████████████████████ Creating volumes ██████████████████████$(RESET)"
 	mkdir -p $(HOME)/data/db-data
 	mkdir -p $(HOME)/data/www-data
-	mkdir -p $(HOME)/data/backup-data
 
