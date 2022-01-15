@@ -359,7 +359,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13,	1,	'wp_user_level',	'10'),
 (14,	1,	'dismissed_wp_pointers',	''),
 (15,	1,	'show_welcome_panel',	'1'),
-(16,	1,	'session_tokens',	'a:2:{s:64:\"311b2234c74158b139eef307b353b0fe4e27850abab76602223dc5656b22cefa\";a:4:{s:10:\"expiration\";i:1639930978;s:2:\"ip\";s:10:\"10.12.7.12\";s:2:\"ua\";s:120:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36\";s:5:\"login\";i:1639758178;}s:64:\"71a845c7e8fa6f247d96fbc481e07e24d769a8f0becee8e61cbabacc7b2bf190\";a:4:{s:10:\"expiration\";i:1640032056;s:2:\"ip\";s:11:\"10.12.10.11\";s:2:\"ua\";s:120:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36\";s:5:\"login\";i:1639859256;}}'),
+(16,	1,	'session_tokens',	''),
 (17,	1,	'wp_dashboard_quick_press_last_post_id',	'4'),
 (18,	1,	'community-events-location',	'a:1:{s:2:\"ip\";s:10:\"10.12.10.0\";}');
 
@@ -382,5 +382,5 @@ CREATE TABLE `wp_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1,	'mpezzull',	'$P$BfhuwdXL7NnQclrWzAzVyaxsQZLLvV/',	'mpezzull',	'mpezzull@inception.com',	'https://mpezzull.42.fr',	'2021-12-17 16:22:51',	'',	0,	'mpezzull');
+(1,	'mpezzull',	'$P$Br1vaCdnWZ1.5XdSBxenovSsZJBfDH.',	'mpezzull',	'mpezzull@inception.com',	'https://mpezzull.42.fr',	'2021-12-21 19:42:51',	'',	0,	'mpezzull');
 
