@@ -30,7 +30,6 @@ status:
 	@echo "$(GREEN)██████████████████████ The Running Containers ██████████████████████$(RESET)"
 	docker ps
 
-
 stop:
 	@echo "$(RED)████████████████████ Stoping Containers █████████████████████$(RESET)"
 	docker-compose -f ./srcs/docker-compose.yml stop
