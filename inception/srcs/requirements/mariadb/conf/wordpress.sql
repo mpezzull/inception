@@ -356,12 +356,33 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (10,	1,	'show_admin_bar_front',	'true'),
 (11,	1,	'locale',	''),
 (12,	1,	'wp_capabilities',	'a:1:{s:13:\"administrator\";b:1;}'),
-(13,	1,	'wp_user_level',	'10'),
+(13,	1,	'wp_user_level',	'7'),
 (14,	1,	'dismissed_wp_pointers',	''),
 (15,	1,	'show_welcome_panel',	'1'),
 (16,	1,	'session_tokens',	''),
 (17,	1,	'wp_dashboard_quick_press_last_post_id',	'4'),
 (18,	1,	'community-events-location',	'a:1:{s:2:\"ip\";s:10:\"10.12.10.0\";}');
+
+INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
+(19,	2,	'nickname',	'king'),
+(20,	2,	'first_name',	''),
+(21,	2,	'last_name',	''),
+(22,	2,	'description',	''),
+(23,	2,	'rich_editing',	'true'),
+(24,	2,	'syntax_highlighting',	'true'),
+(25,	2,	'comment_shortcuts',	'false'),
+(26,	2,	'admin_color',	'fresh'),
+(27,	2,	'use_ssl',	'0'),
+(28,	2,	'show_admin_bar_front',	'true'),
+(29,	2,	'locale',	''),
+(30,	2,	'wp_capabilities',	'a:1:{s:13:\"administrator\";b:1;}'),
+(31,	2,	'wp_user_level',	'10'),
+(32,	2,	'dismissed_wp_pointers',	''),
+(33,	2,	'show_welcome_panel',	'1'),
+(34,	2,	'session_tokens',	''),
+(35,	2,	'wp_dashboard_quick_press_last_post_id',	'4'),
+(36,	2,	'community-events-location',	'a:1:{s:2:\"ip\";s:10:\"10.12.10.0\";}');
+
 
 DROP TABLE IF EXISTS `wp_users`;
 CREATE TABLE `wp_users` (
@@ -383,4 +404,5 @@ CREATE TABLE `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'mpezzull',	'$P$Br1vaCdnWZ1.5XdSBxenovSsZJBfDH.',	'mpezzull',	'mpezzull@inception.com',	'https://mpezzull.42.fr',	'2021-12-21 19:42:51',	'',	0,	'mpezzull');
-
+INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
+(2,	'king',	'$P$Br1vaCdnWZ1.5XdSBxenovSsZJBfDH.',	'king',	'king@inception.com',	'https://mpezzull.42.fr',	'2021-12-21 19:42:51',	'',	0,	'king');
